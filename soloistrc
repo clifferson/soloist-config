@@ -1,0 +1,20 @@
+recipes:
+- pivotal_workstation::create_var_chef_cache
+- pivotal_workstation::alfred
+- pivotal_workstation::chrome
+- pivotal_workstation::dropbox
+- pivotal_workstation::sizeup
+- pivotal_workstation::iterm2
+- pivotal_workstation::java
+- pivotal_workstation::1password
+- pivotal_workstation::vlc
+- pivotal_workstation::adium
+- pivotal_workstation::skype
+- pivotal_workstation::homebrew
+- pivotal_workstation::zsh
+- pivotal_workstation::oh_my_zsh
+node_attributes:
+  rbenv:
+    rubies:
+      1.9.3-p362
+    default_ruby: 1.9.3-p362
