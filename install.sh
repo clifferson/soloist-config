@@ -21,7 +21,7 @@ sudo gem install soloist --no-rdoc --no-ri
 sudo gem install plist --no-rdoc --no-ri
 
 echo "Running soloist"
-if $(cd ${SOLOISTDIR} && sudo soloist); then
+if $(cd ${SOLOISTDIR} && sudo soloist |tee ${SOLOISTDIR}/soloist.out); then
 
   echo "Delete ${SOLOISTDIR}? [y/n]:"
   read DELETE_SOLOISTGO
