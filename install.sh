@@ -27,7 +27,7 @@ if [ $? -eq 0 ]; then
   echo "Delete ${SOLOISTDIR}? [y/n]:"
   read DELETE_SOLOISTGO
 
-  if [ $DELETE_SOLOISTGO == 'y' ]; then
+  if [ "$DELETE_SOLOISTGO" == "y" ]; then
     echo "Deleting ${SOLOISTDIR}"
     rm -rf ${SOLOISTDIR}
   fi
