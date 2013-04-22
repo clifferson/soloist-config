@@ -4,6 +4,9 @@ SOLOISTDIR="${HOME}/soloistgo"
 SOLOISTRC_URL="https://raw.github.com/clifferson/soloist-config/master/soloistrc"
 CHEFFILE_URL="https://raw.github.com/clifferson/soloist-config/master/Cheffile"
 
+echo "I can has root?"
+sudo
+
 echo "Creating .soloistgo dir"
 mkdir ${SOLOISTDIR}
 
@@ -17,7 +20,7 @@ echo "Installing soloist gem"
 sudo gem install soloist --no-rdoc --no-ri
 
 echo "Running soloist"
-cd ${SOLOISTDIR} && soloist
+cd ${SOLOISTDIR} && sudo soloist
 
 echo "Delete ${SOLOISTDIR}? [y/n]:"
 read DELETE_SOLOISTGO
