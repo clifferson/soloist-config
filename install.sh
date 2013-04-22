@@ -21,12 +21,15 @@ sudo gme install soloist --no-rdoc --no-ri
 sudo gem install plist --no-rdoc --no-ri
 
 echo "Running soloist"
-cd ${SOLOISTDIR} && sudo soloist
+if $(cd ${SOLOISTDIR} && sudo soloist); then
 
-echo "Delete ${SOLOISTDIR}? [y/n]:"
-read DELETE_SOLOISTGO
+  echo "Delete ${SOLOISTDIR}? [y/n]:"
+  read DELETE_SOLOISTGO
 
-if [ $DELETE_SOLOISTGO == 'y' ]; then
-  echo "Deleting ${SOLOISTDIR}"
-  rm -rf ${SOLOISTDIR}
+  if [ $DELETE_SOLOISTGO == 'y' ]; then
+    echo "Deleting ${SOLOISTDIR}"
+    rm -rf ${SOLOISTDIR}
+  fi
+else
+  echo "Soloist run failed"
 fi
