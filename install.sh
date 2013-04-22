@@ -5,7 +5,7 @@ SOLOISTRC_URL="https://raw.github.com/clifferson/soloist-config/master/soloistrc
 CHEFFILE_URL="https://raw.github.com/clifferson/soloist-config/master/Cheffile"
 
 echo "I can has root?"
-sudo
+sudo true
 
 echo "Creating .soloistgo dir"
 mkdir ${SOLOISTDIR}
@@ -16,8 +16,9 @@ curl ${SOLOISTRC_URL} -o ${SOLOISTDIR}/soloistrc
 echo "Downloading Cheffile"
 curl ${CHEFFILE_URL} -o ${SOLOISTDIR}/Cheffile
 
-echo "Installing soloist gem"
-sudo gem install soloist --no-rdoc --no-ri
+echo "Installing soloist & plist gem"
+sudo gme install soloist --no-rdoc --no-ri
+sudo gem install plist --no-rdoc --no-ri
 
 echo "Running soloist"
 cd ${SOLOISTDIR} && sudo soloist
