@@ -17,7 +17,7 @@ echo "Downloading Cheffile"
 curl ${CHEFFILE_URL} -o ${SOLOISTDIR}/Cheffile
 
 echo "Installing soloist & plist gem"
-sudo gem install soloist --no-rdoc --no-ri
+if [ ! $(gem specification soloist &>/dev/null) ]; then sudo gem install soloist --no-rdoc --no-ri; fi
 sudo gem install plist --no-rdoc --no-ri
 
 echo "Running soloist"
