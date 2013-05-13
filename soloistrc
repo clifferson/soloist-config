@@ -1,17 +1,17 @@
 recipes:
 - pivotal_workstation::create_var_chef_cache
-- pivotal_workstation::alfred
-- pivotal_workstation::chrome
-- pivotal_workstation::dropbox
+- sprout-osx-apps::alfred
+- sprout-osx-apps::chrome
+- sprout-osx-apps::dropbox
 - pivotal_workstation::sizeup
 - pivotal_workstation::iterm2
 - pivotal_workstation::java
-- pivotal_workstation::1password
-- pivotal_workstation::vlc
-- pivotal_workstation::adium
-- pivotal_workstation::skype
+- sprout-osx-apps::1password
+- sprout-osx-apps::vlc
+- sprout-osx-apps::adium
+- sprout-osx-apps::skype
 - pivotal_workstation::homebrew
-- pivotal_workstation::zsh
+- sprout-osx-apps::zsh
 - pivotal_workstation::oh_my_zsh
 node_attributes:
   rbenv:
