@@ -33,5 +33,5 @@ cd ${SOLOISTDIR} && sudo ${CHEF_EMBEDDED_PATH}/soloist
 if [ $? -eq 0 ]; then
   echo "Soloist run complete, you might want to delete ${SOLOISTDIR}?"
 else
-  echo "Soloist failed, run it again: cd ${SOLOISTDIR} && sudo soloist"
+  echo "Soloist failed, run it again: cd ${SOLOISTDIR} && sudo ${CHEF_EMBEDDED_PATH}/soloist"
 fi
