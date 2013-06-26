@@ -1,0 +1,7 @@
+recipes:
+- pivotal_workstation::java
+node_attributes:
+  rbenv:
+    rubies:
+      1.9.3-p362
+    default_ruby: 1.9.3-p362
