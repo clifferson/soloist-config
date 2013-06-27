@@ -1,17 +1,16 @@
 site 'http://community.opscode.com/api/v1'
 
 cookbook 'sprout-osx-base',
-  :git => 'git://github.com/pivotal-sprout/sprout.git',
+  :git => 'git://github.com/clifferson/sprout.git',
+  :ref => 'bashit_enabled_boolean'
   :path => 'sprout-osx-base'
 
 cookbook 'pivotal_workstation',
-  :git => 'git://github.com/clifferson/sprout.git',
-  :ref => "java_uses_attributes_and_moved_to_sproutosxapps",
+  :git => 'git://github.com/pivotal-sprout/sprout.git',
   :path => 'pivotal_workstation'
 
 cookbook 'sprout-osx-apps',
-  :git => 'git://github.com/clifferson/sprout.git',
-  :ref => "java_uses_attributes_and_moved_to_sproutosxapps",
+  :git => 'git://github.com/pivotal-sprout/sprout.git',
   :path => 'sprout-osx-apps'
 
 cookbook 'sprout-osx-settings',
