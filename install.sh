@@ -14,7 +14,7 @@ sudo true
 echo "Installing omnibus chef."
 curl -L https://www.opscode.com/chef/install.sh | sudo bash
 
-echo "Creating .soloistgo dir"
+echo "Creating soloistgo dir"
 mkdir ${SOLOISTDIR}
 
 echo "Downloading soloistrc"
