@@ -1,23 +1,32 @@
 recipes:
 - pivotal_workstation::create_var_chef_cache
-- sprout-osx-apps::alfred
 - sprout-osx-apps::chrome
 - sprout-osx-apps::dropbox
-- pivotal_workstation::sizeup
-- pivotal_workstation::iterm2
-- pivotal_workstation::java
+- sprout-osx-apps::flux
+- sprout-osx-apps::vagrant
+- sprout-osx-apps::sizeup
+- sprout-osx-apps::iterm2
+- sprout-osx-apps::java
 - sprout-osx-apps::1password
 - sprout-osx-apps::vlc
 - sprout-osx-apps::adium
 - sprout-osx-apps::skype
-- pivotal_workstation::homebrew
+- sprout-osx-base::homebrew
 - sprout-osx-apps::zsh
 - pivotal_workstation::oh_my_zsh
+- workstation::tmux
+- workstation::alfred
+- workstation::firefox
+- workstation::install_dotfiles
+- workstation::install_dotvim
+- workstation::link_library_things
+- sprout-osx-settings::disable_front_row
+#- sprout-osx-settings::function_keys
+#- sprout-osx-settings::osx_aqua_color_preferences
+#- sprout-osx-settings::set_finder_show_user_home_in_sidebar
+#- sprout-osx-settings::set_multitouch_preferences
 node_attributes:
   rbenv:
     rubies:
       1.9.3-p362
     default_ruby: 1.9.3-p362
-  bast_it:
-    enabled:
-      false
