@@ -20,6 +20,7 @@ recipes:
 - workstation::install_dotfiles
 - workstation::install_dotvim
 - workstation::link_library_things
+- workstation::link_ssh_things
 - sprout-osx-settings::disable_front_row
 #- sprout-osx-settings::function_keys
 #- sprout-osx-settings::osx_aqua_color_preferences
