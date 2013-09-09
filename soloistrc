@@ -13,6 +13,7 @@ recipes:
 - sprout-osx-apps::skype
 - sprout-osx-base::homebrew
 - sprout-osx-apps::zsh
+- sprout-osx-apps::hipchat
 - pivotal_workstation::oh_my_zsh
 - workstation::tmux
 - workstation::alfred
