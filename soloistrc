@@ -18,6 +18,7 @@ recipes:
 - workstation::tmux
 - workstation::alfred
 - workstation::firefox
+- workstation::spotify
 - workstation::install_dotfiles
 - workstation::install_dotvim
 - workstation::link_library_things
