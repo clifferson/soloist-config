@@ -3,6 +3,7 @@ recipes:
 - sprout-osx-apps::chrome
 - sprout-osx-apps::dropbox
 - sprout-osx-apps::flux
+- sprout-osx-apps::adium
 - sprout-osx-apps::vagrant
 - sprout-osx-apps::sizeup
 - sprout-osx-apps::iterm2
