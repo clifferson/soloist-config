@@ -15,6 +15,7 @@ recipes:
 - sprout-osx-base::homebrew
 - sprout-osx-apps::zsh
 - sprout-osx-apps::hipchat
+- sprout-osx-rbenv::default
 - pivotal_workstation::oh_my_zsh
 - workstation::tmux
 - workstation::alfred
@@ -31,7 +32,3 @@ recipes:
 #- sprout-osx-settings::set_finder_show_user_home_in_sidebar
 #- sprout-osx-settings::set_multitouch_preferences
 node_attributes:
-  rbenv:
-    rubies:
-      1.9.3-p362
-    default_ruby: 1.9.3-p362
