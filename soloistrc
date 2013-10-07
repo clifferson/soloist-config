@@ -23,6 +23,7 @@ recipes:
 - workstation::spotify
 - workstation::install_dotfiles
 - workstation::install_dotvim
+- workstation::install_brew_things
 - workstation::link_library_things
 - workstation::link_ssh_things
 - workstation::fluid
