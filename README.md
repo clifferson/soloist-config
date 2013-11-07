@@ -12,7 +12,7 @@ curl -L https://raw.github.com/clifferson/soloist-config/master/install.sh | sh
 
 Set these ENV vars prior to running the install.sh script if you would like to overwrite defaults.
 
-### These attributes expect a curl compatiable url. http://foo.com/soloistrc or file:/path/to/Cheffile
+### These attributes expect a curl compatiable url. 
 
 * SOLOISTRC_URL - `export SOLOISTRC_URL="http://foo.com/soloistrc"`
 * CHEFFILE_URL - `export CHEFFILE_URL="file:/path/to/Cheffile"`
