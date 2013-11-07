@@ -1,7 +1,6 @@
 
 ### Requires 
- * Ruby
- * Xcode and/or Command line tools
+ * [Xcode](https://developer.apple.com/xcode/) and [Command Line Tools](http://docwiki.embarcadero.com/RADStudio/XE4/en/Installing_the_Xcode_Command_Line_Tools_on_a_Mac)
 
 ## Install and run soloist 
 
